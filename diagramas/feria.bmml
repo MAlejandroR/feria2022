@@ -1,0 +1,192 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1961" measuredH="1227" mockupW="1654" mockupH="1227">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="311" y="0" w="929" h="600" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="312" y="72" w="924" h="91" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="327" y="78" w="131" h="79" measuredW="77" measuredH="79" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Title" x="568" y="96" w="-1" h="-1" measuredW="494" measuredH="43" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>6%AA%20Feria%20Los%20Enlaces%202022</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Canvas" x="307" y="480" w="933" h="90" measuredW="100" measuredH="70" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Webcam" x="687" y="279" w="-1" h="-1" measuredW="177" measuredH="146" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Image" x="381" y="185" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Image" x="1072" y="185" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Image" x="381" y="386" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Image" x="1071" y="401" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::LinkBar" x="339" y="495" w="-1" h="-1" measuredW="84" measuredH="19" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>copyringh</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="339" y="534" w="-1" h="-1" measuredW="243" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Bonos%20Puntos%20o%20credenciales%20a%20la%20imagen</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="672" y="515" w="-1" h="-1" measuredW="148" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Datos%20del%20cpi%20los%20enlaces</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Button" x="1062" y="519" w="-1" h="-1" measuredW="161" measuredH="27" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Acceso%20Administraci%u1E55nn</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Canvas" x="1383" y="157" w="214" h="70" measuredW="100" measuredH="70" zOrder="15" locked="false" isInGroup="-1"/>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Image" x="1426" y="167" w="111" h="51" measuredW="77" measuredH="79" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Button" x="1508" y="507" w="-1" h="-1" measuredW="89" measuredH="27" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Administrar</text>
+      </controlProperties>
+    </control>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::iPhone" x="1349" y="47" w="-1" h="-1" measuredW="282" measuredH="573" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <model>IPhone5</model>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::Webcam" x="1405" y="294" w="-1" h="-1" measuredW="177" measuredH="146" zOrder="18" locked="false" isInGroup="-1"/>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::Label" x="1389" y="487" w="-1" h="-1" measuredW="148" measuredH="21" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Datos%20del%20cpi%20los%20enlaces</text>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::iPhone" x="1664" y="54" w="-1" h="-1" measuredW="282" measuredH="573" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <model>IPhone5</model>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::Canvas" x="1698" y="164" w="214" h="70" measuredW="100" measuredH="70" zOrder="21" locked="false" isInGroup="-1"/>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::Image" x="1741" y="174" w="111" h="51" measuredW="77" measuredH="79" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Button" x="1823" y="514" w="-1" h="-1" measuredW="89" measuredH="27" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Administrar</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Webcam" x="1779" y="353" w="52" h="48" measuredW="177" measuredH="146" zOrder="24" locked="false" isInGroup="-1"/>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Label" x="1704" y="494" w="-1" h="-1" measuredW="148" measuredH="21" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Datos%20del%20cpi%20los%20enlaces</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Image" x="1704" y="261" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::iPhone" x="1357" y="645" w="-1" h="-1" measuredW="282" measuredH="573" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <model>IPhone5</model>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Canvas" x="1391" y="755" w="214" h="70" measuredW="100" measuredH="70" zOrder="28" locked="false" isInGroup="-1"/>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Image" x="1434" y="765" w="111" h="51" measuredW="77" measuredH="79" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Button" x="1516" y="1105" w="-1" h="-1" measuredW="89" measuredH="27" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Administrar</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Webcam" x="1472" y="944" w="52" h="48" measuredW="177" measuredH="146" zOrder="31" locked="false" isInGroup="-1"/>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Label" x="1397" y="1085" w="-1" h="-1" measuredW="148" measuredH="21" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Datos%20del%20cpi%20los%20enlaces</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::Image" x="1524" y="846" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::iPhone" x="1679" y="654" w="-1" h="-1" measuredW="282" measuredH="573" zOrder="34" locked="false" isInGroup="-1">
+      <controlProperties>
+        <model>IPhone5</model>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::Canvas" x="1713" y="764" w="214" h="70" measuredW="100" measuredH="70" zOrder="35" locked="false" isInGroup="-1"/>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Image" x="1756" y="774" w="111" h="51" measuredW="77" measuredH="79" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Button" x="1838" y="1114" w="-1" h="-1" measuredW="89" measuredH="27" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Administrar</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Webcam" x="1794" y="953" w="52" h="48" measuredW="177" measuredH="146" zOrder="38" locked="false" isInGroup="-1"/>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Label" x="1719" y="1094" w="-1" h="-1" measuredW="148" measuredH="21" zOrder="39" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Datos%20del%20cpi%20los%20enlaces</text>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Image" x="1846" y="1015" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="40" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::iPhone" x="1012" y="639" w="-1" h="-1" measuredW="282" measuredH="573" zOrder="41" locked="false" isInGroup="-1">
+      <controlProperties>
+        <model>IPhone5</model>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::Canvas" x="1046" y="749" w="214" h="70" measuredW="100" measuredH="70" zOrder="42" locked="false" isInGroup="-1"/>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::Image" x="1089" y="759" w="111" h="51" measuredW="77" measuredH="79" zOrder="43" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Button" x="1171" y="1099" w="-1" h="-1" measuredW="89" measuredH="27" zOrder="44" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Administrar</text>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::Webcam" x="1127" y="938" w="52" h="48" measuredW="177" measuredH="146" zOrder="45" locked="false" isInGroup="-1"/>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::Label" x="1052" y="1079" w="-1" h="-1" measuredW="148" measuredH="21" zOrder="46" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Datos%20del%20cpi%20los%20enlaces</text>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::Image" x="1046" y="1001" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="47" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
