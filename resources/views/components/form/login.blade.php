@@ -15,6 +15,7 @@
             <h1 class="text-center text-2xl text-green-dark">Login</h1>
 
             <form class="pt-6 pb-2 my-2">
+                @csrf
                 <div class="mb-4">
                     <label class="block text-sm font-bold mb-2" for="email">
                         Email Address

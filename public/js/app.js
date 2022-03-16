@@ -21936,7 +21936,7 @@ var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 
 var _hoisted_8 = [_hoisted_7];
 var _hoisted_9 = {
-  "class": "w-full md:w-1/3 md:h-full flex flex-col justify-center items-center"
+  "class": "w-full md:h-full md:w-3/5 flex flex-col justify-center items-center"
 };
 
 var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" title=\"Presentación jornadas\" poster='images/logo_calidad.png' id=video> ");
@@ -22006,7 +22006,7 @@ var _hoisted_25 = [_hoisted_24];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("Botones familias profesionales izquierda"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: $data.informatica,
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["botonFamilia flex-grow justify-end w-3/5", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["botonFamilia flex-grow justify-end hidden md:flex w-1/5", {
       active: $data.isActiveInformatica
     }])
   }, _hoisted_5, 10
@@ -22024,7 +22024,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }),
     ref: "videoRef",
     id: "video",
-    "class": "",
+    width: "10%",
     autoplay: true,
     controls: "",
     playsinline: ""

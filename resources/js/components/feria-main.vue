@@ -9,10 +9,9 @@
         <div class="
         hidden md:flex
  flex-col justify-between        z-10 md:z-50
-
         pl-8 pr-8 w-1/3  content-end items-end">
 
-            <a :href=informatica class="botonFamilia flex-grow justify-end w-3/5"
+            <a :href=informatica class="botonFamilia flex-grow justify-end hidden md:flex w-1/5"
                :class="{active: isActiveInformatica} ">
                 <img id="informatica" class="self-end w-100"
                      src="images/familias/si_informatica.png" alt="Comercio">
@@ -25,10 +24,10 @@
       <!--Vídeo-->
 <!--      MRM Actual Problema con responsivo: quiero todo el ancho si es móvil y cuando rompa a tamaño superior a md, 1/3 de la pantalla-->
         <div class="
-        w-full md:w-1/3 md:h-full
+        w-full  md:h-full md:w-3/5
         flex flex-col justify-center items-center  ">
 
-            <video  @timeupdate="onTimeUpdate" ref="videoRef" id='video' class=""
+            <video  @timeupdate="onTimeUpdate" ref="videoRef" id='video' width="10%"
                    :autoplay="true"  autoplay controls  playsinline >
                 title="Presentación jornadas"
                 poster='images/logo_calidad.png' id=video>
