@@ -28,7 +28,7 @@
             text-2xl border-2 border-green-800 rounded bg-enlaces p-1">
                 {{ crono }}
             </span>
-            <a class="botonFamilia bg-gray-600 " href="{{ empresa.enlace }}"> Accede a la ponencia de <span class="ml-2 text-xl italic">{{empresa.ponente}}</span></a>
+            <a class="anclaFamilia bg-gray-600 " href="{{ empresa.enlace }}"> Accede a la ponencia de <span class="ml-2 text-xl italic">{{empresa.ponente}}</span></a>
             <hr />
 
             <div v-if="contacto" >

@@ -89,6 +89,8 @@ module.exports = {
                 "80v": "80vw",
                 "90v": "90vw",
                 "100v": "100vw",
+                "2/5":"40%",
+                "1/3": "33%"
             },
             translate: ['active', 'group_hover'],
 

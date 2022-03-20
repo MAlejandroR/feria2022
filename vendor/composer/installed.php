@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'b9c8465cb7fc4d4674aed29c111b341d22e69dde',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -392,12 +392,12 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'b9c8465cb7fc4d4674aed29c111b341d22e69dde',
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(
@@ -754,8 +754,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0|3.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0|3.0',
             ),
         ),
         'psr/simple-cache' => array(
@@ -987,12 +987,12 @@
             'dev_requirement' => true,
         ),
         'spatie/laravel-ignition' => array(
-            'pretty_version' => '1.0.9',
-            'version' => '1.0.9.0',
+            'pretty_version' => '1.0.10',
+            'version' => '1.0.10.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../spatie/laravel-ignition',
             'aliases' => array(),
-            'reference' => 'd7b223300d511145eea87fdabae1663c7c0088aa',
+            'reference' => '71df77cad94aae4db904aaef1cc2f06950daed76',
             'dev_requirement' => true,
         ),
         'symfony/console' => array(

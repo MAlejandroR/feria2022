@@ -87,6 +87,12 @@ Establecido la degradación: añado en fondo.vue.js el fondo
 
 Esto Funciona
 
+### Diseño responsivo 
+
+1. Hidden los grupos de botones de familias profesionales en sd
+2. Size de las imágenes
+3. Size del grupò de botoloes laterales
+
 ### Tamaño del vídeo y quitar rallitas que aparecen
 
 

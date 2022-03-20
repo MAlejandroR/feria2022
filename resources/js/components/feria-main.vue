@@ -2,32 +2,28 @@
 
 
 <template>
-    <div class="flex flex-row  w-screen justify-between items-center h-75v items-center
-    bg-gradient-to-r from-fondo-l via-fondo-via to-fondo-r">
+    <div class="flex flex-row  w-screen justify-between items-center h-full items-center
+    bg-gradient-to-r from-fondo-l via-fondo-via to-fondo-r max-h-max">
 
       <!--Botones familias profesionales izquierda-->
-        <div class="
-        hidden md:flex
- flex-col justify-between        z-10 md:z-50
-        pl-8 pr-8 w-1/3  content-end items-end">
-
-            <a :href=informatica class="botonFamilia flex-grow justify-end hidden md:flex w-1/5"
+        <div class="groupButtonFamily">
+            <a :href=informatica class="anclaFamilia "
                :class="{active: isActiveInformatica} ">
-                <img id="informatica" class="self-end w-100"
+                <img id="informatica" class="imgFamily"
                      src="images/familias/si_informatica.png" alt="Comercio">
             </a>
-            <a :href=imagen class="botonFamilia justify-end w-3/5" :class="{active: isActiveImagen}">
-                <img id="imagen" class=" max-w-full object-fill items-end"
+            <a :href=imagen class="anclaFamilia " :class="{active: isActiveImagen}">
+                <img id="imagen" class="imgFamily"
                      src="images/familias/ii_imagen.png" alt="Imagen">
             </a>
         </div>
       <!--Vídeo-->
 <!--      MRM Actual Problema con responsivo: quiero todo el ancho si es móvil y cuando rompa a tamaño superior a md, 1/3 de la pantalla-->
         <div class="
-        w-full  md:h-full md:w-3/5
+           sm:h-full w-1/3
         flex flex-col justify-center items-center  ">
 
-            <video  @timeupdate="onTimeUpdate" ref="videoRef" id='video' width="10%"
+            <video  @timeupdate="onTimeUpdate" ref="videoRef" id='video'
                    :autoplay="true"  autoplay controls  playsinline >
                 title="Presentación jornadas"
                 poster='images/logo_calidad.png' id=video>
@@ -41,15 +37,13 @@
             </video>
         </div>
       <!--Botones familias profesionales derecah-->
-        <div class="
-          hidden md:flex
-         z-10 md:z-50  flex-col justify-between pl-8 pr-8 w-1/3  content-start">
-            <a :href=comercio class="botonFamilia  w-3/5" :class="{active: isActiveComercio}">
-                <img id="comercio" class=" object-fill "
+        <div class="groupButtonFamily">
+            <a :href=comercio class="anclaFamilia" :class="{active: isActiveComercio}">
+                <img id="comercio" class="imgFamily"
                      src="images/familias/sd_comercio.png" alt="Imagen">
             </a>
-            <a :href=jornadas class="botonFamilia  w-3/5" :class="{active: isActiveJornadas}">
-                <img id="jorandas" class=" object-fill"
+            <a :href=jornadas class="anclaFamilia" :class="{active: isActiveJornadas}">
+                <img id="jorandas" class="imgFamily"
                      src="images/familias/id_jornadas.png" alt="Imagen">
             </a>
         </div>

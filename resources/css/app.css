@@ -52,17 +52,36 @@
 /*}*/
 
 /*    active:translate-y-0*/
-.botonFamilia {
-    @apply inline-flex
-    items-center
-    px-4
-    py-2
-    border
-    border-transparent
+
+/*en sd es hidden, solo en md, lg, */
+
+/*Quioero 1/3 del ancho de su contenedor (goupButtonFamily)*/
+.sizeButtonFamily{
+    @apply w-full
+}
+.imgFamily{
+    @apply max-w-full object-scale-down  w-44 h-44
+}
+
+/* Que ocupe 1/4 del ancho de la parte main para mostrar los botones de izd o decha*/
+.groupButtonFamily{
+    @apply hidden md:flex
+    flex-col justify-between items-center
+    z-50
+    w-1/4
+    h-75v
+    pl-8 pr-8
+}
+.anclaFamilia {
+    @apply
+    flex
+    items-center  justify-center
+        grow
+    px-4    py-2
+    border    border-transparent
     rounded-md
     font-semibold
-    text-xs
-    text-white
+    text-xs    text-white
     uppercase
     tracking-widest
     hover:bg-gray-700
