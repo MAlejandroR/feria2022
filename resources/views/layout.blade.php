@@ -12,13 +12,14 @@
 
 <body class="container-ppal">
 
-    <x-layout.header/>
+<x-layout.header/>
 
 @yield("contenido")
 <!--Pie en lugar de componente, inserto el html -->
-    <x-layout.footer/>
-    @yield("script")
-    <script src="{{asset('js/app.js')}}"></script>
+<x-layout.footer/>
+@yield("script")
+
+<script src="{{asset('js/app.js')}}"></script>
 
 
 </body>

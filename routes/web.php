@@ -27,7 +27,7 @@ Route::get('/dashboard', function () {
 Route::view('a',"a");
 
 Route::get('/',[FeriaController::class, "index"])->name ("feria-main");
-Route::resource("empresas", EmpresasController::class);
+Route::resource("empresas", EmpresaController::class);
 
 Route::post("ponencias", ("EmpresaController@ponencias"))->name("empresas.ponencias");
 

@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Empresa;
+use App\Models\Ciclo;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class EmpresaFactory extends Factory
+class CicloFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Empresa::class;
+    protected $model = Ciclo::class;
 
     /**
      * Define the model's default state.

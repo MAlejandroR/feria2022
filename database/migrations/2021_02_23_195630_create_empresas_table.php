@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
+class CreateEmpresasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -16,6 +16,15 @@ return new class extends Migration
         Schema::create('empresas', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string("empresa");
+            $table->string("descripcion",4096);
+            $table->string("ponente");
+            $table->string("horario");
+            $table->string("duracion");
+            $table->string("enlace");
+            $table->string("logo");
+            $table->string("email");
+            $table->string("persona_contacto");
         });
     }
 
@@ -26,6 +35,8 @@ return new class extends Migration
      */
     public function down()
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         Schema::dropIfExists('empresas');
+        DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
-};
+}
