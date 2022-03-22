@@ -17,11 +17,7 @@
   <!--    <label class="p-4 text-xl" for="familia">Ciclo/s a los que va dirigido </label>-->
 
   <div id='ciclo' class="border border-pink-900 rounded-2xl">
-    <!--        Falta implementar esta parte-->
-    <h2>Para mostrar ciclos, selecciona una familia</h2>
-    <ul>
-      <li v-for="c in ciclos_selected">{{ c }}</li>
-    </ul>
+    <span v-html="listado_ciclos"></span>
   </div>
 </template>
 
@@ -43,6 +39,7 @@ export default {
       nombre_ciclos: {},
       url: "",
       ciclos_selected: [],
+      listado_ciclos:"",
 
       // familias: JSON.parse(this.ciclos)
     }
@@ -60,9 +57,10 @@ export default {
   methods: {
     ciclos_familia() {
       axios.post('/obtener_ciclos', {familias: this.ciclos_selected})
-          .then((response) => {
+          .then((response) =>(this.listado_ciclos=response.data.html)
+              /*{
                 $('#ciclo').html(response.data.html)
-              }
+              }*/
           )
     }
   },

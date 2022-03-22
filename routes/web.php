@@ -30,6 +30,7 @@ Route::get('/',[FeriaController::class, "index"])->name ("feria-main");
 Route::resource("empresas", EmpresaController::class);
 
 Route::post("ponencias", ("EmpresaController@ponencias"))->name("empresas.ponencias");
+Route::post("obtener_ciclos",("App\Http\Controllers\CicloController@get"))->name("ciclos.get_by_family");
 
 require __DIR__.'/auth.php';
 

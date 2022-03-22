@@ -21366,7 +21366,8 @@ __webpack_require__.r(__webpack_exports__);
       familia: {},
       nombre_ciclos: {},
       url: "",
-      ciclos_selected: [] // familias: JSON.parse(this.ciclos)
+      ciclos_selected: [],
+      listado_ciclos: "" // familias: JSON.parse(this.ciclos)
 
     };
   },
@@ -21380,11 +21381,17 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     ciclos_familia: function ciclos_familia() {
+      var _this = this;
+
       axios__WEBPACK_IMPORTED_MODULE_0___default().post('/obtener_ciclos', {
         familias: this.ciclos_selected
       }).then(function (response) {
-        $('#ciclo').html(response.data.html);
-      });
+        return _this.listado_ciclos = response.data.html;
+      }
+      /*{
+        $('#ciclo').html(response.data.html)
+      }*/
+      );
     }
   }
 });
@@ -21852,11 +21859,7 @@ var _hoisted_7 = {
   id: "ciclo",
   "class": "border border-pink-900 rounded-2xl"
 };
-
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Para mostrar ciclos, selecciona una familia", -1
-/* HOISTED */
-);
-
+var _hoisted_8 = ["innerHTML"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" A ver qué veo -{{ciclos}}- "), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.familia, function (ciclo) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
@@ -21880,13 +21883,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     )]);
   }), 256
   /* UNKEYED_FRAGMENT */
-  ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("    <label class=\"p-4 text-xl\" for=\"familia\">Ciclo/s a los que va dirigido </label>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        Falta implementar esta parte"), _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.ciclos_selected, function (c) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(c), 1
-    /* TEXT */
-    );
-  }), 256
-  /* UNKEYED_FRAGMENT */
-  ))])])], 64
+  ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("    <label class=\"p-4 text-xl\" for=\"familia\">Ciclo/s a los que va dirigido </label>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+    innerHTML: _ctx.listado_ciclos
+  }, null, 8
+  /* PROPS */
+  , _hoisted_8)])], 64
   /* STABLE_FRAGMENT */
   );
 }

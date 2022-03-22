@@ -38,7 +38,7 @@ class CicloSeeder extends Seeder
 
         $color = "";
         foreach ($familias as $familia => $ciclos) {
-            $color = $familia == "Comercio y Marketing" ? "red" : $color;
+            $color = $familia == "Comercio y Marketing" ? "yellow" : $color;
             $color = $familia == "Imagen y Sonio" ? "green" : $color;
             $color = $familia == "Informática y Comunicaciones" ? "blue" : $color;
             foreach ($ciclos as $ciclo) {
