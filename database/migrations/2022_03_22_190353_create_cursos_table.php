@@ -16,6 +16,14 @@ return new class extends Migration
         Schema::create('cursos', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string("curso");
+            $table->string("modalidad");
+            $table->string("aula");
+            $table->foreignId('ciclo')
+                ->constrained('ciclos')
+                ->onDelete('cascade');
+
+
         });
     }
 

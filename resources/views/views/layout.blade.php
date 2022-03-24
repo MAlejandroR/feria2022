@@ -28,7 +28,6 @@
       max-h-full overflow-hidden place-self-right w-3/4">
             IV Feria de Empleo 2021
         </h1>
-
         @yield ("boton_volver")
     </div>
     <!-- Parte de cabecera, fijo en lugar de componente-->

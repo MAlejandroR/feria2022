@@ -1,7 +1,7 @@
 @extends("layout")
 
 @section('boton_volver')
-    <x-form.a-href href="{{route('feria-main')}}">
+    <x-form.a-href  href="{{route('feria-main')}}">
         Volver
     </x-form.a-href>
 @endsection
@@ -11,7 +11,7 @@
         <h1 class="text-yellow-800 text-3xl">Actualmente no hay empresas insertadas</h1>
     @endempty
     @isset($empresas)
-<div class="w-1/2 overflow-auto h-65v">
+<div class="w-full overflow-auto h-65v">
         <table class="divide-y divide-gray-200 m-5 overflow-x-auto table-fixed">
             {{--                <table class="max-w-full divide-y divide-gray-200 m-5">--}}
             <thead class="bg-gray-50">
@@ -35,7 +35,11 @@
                             </div>
                         </div>
                     </x-form.td>
-                    <x-form.td>{{$empresa->ponente}}</x-form.td>
+                    <x-form.td>
+                        <div class="ml-4 w-1/5 text-sm font-medium text-gray-900">
+                        {{$empresa->ponente}}
+                        </div>
+                    </x-form.td>
                     <x-form.td class=" text-right text-sm font-medium">
                         <a href="{{route("empresas.edit",[$empresa])}}"
                            class="text-indigo-600 hover:text-indigo-900"><img class="w-12 h-8"

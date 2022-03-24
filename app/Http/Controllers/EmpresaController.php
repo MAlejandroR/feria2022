@@ -21,9 +21,7 @@ class EmpresaController extends Controller
     {
 
 
-//Obtenemos todas las empresas
         $empresas = Empresa::All();
-
 //        $ciclosEmpresa = EmpresaCiclos::All();
 //        $listado_empresas = [];
 //        foreach ($empresas as $empresa) {
@@ -48,7 +46,7 @@ class EmpresaController extends Controller
 //            }
 //        }
 //        return view("empresa.listado", ['listado_empresas' => $listado_empresas]);
-
+//dd ($empresas);
         return view("empresa.listado", ['empresas' => $empresas]);
 
         //
@@ -219,6 +217,7 @@ class EmpresaController extends Controller
 
     public function ponencias(Request $datos)
     {
+
         $familia = $datos->familia;
         if ($familia == "jornadas") {
             $msj = "Jornadas pdf con listado de las jornadas ....Esto hay que gestionarlo aparte";
@@ -246,7 +245,6 @@ class EmpresaController extends Controller
         $columnas = ceil(sqrt(count($empresas)));
         info("Número de empresas", [count($empresas)]);
         $filas = $columnas;
-//        dd($empresas);
         return view("empresa.ponencia", ['empresas' => $empresas,
             "columnas" => $columnas,
             "filas" => $filas]);

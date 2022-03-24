@@ -12,7 +12,7 @@
     <img class='display md:hidden object-center max-h-full max-w-full '
          src="{{asset('images/logos/enlaces_feria_movil.png')}} " alt="Logo Enlaces"/>
 
-    <h1 class="hidden  md:block   text-5xl md:text-4xl lg:text-5xl 2xl:text-8xl   font-mono
+    <h1 class="hidden  md:block   text-5xl md:text-4xl lg:text-5xl 2xl:text-7xl   font-mono
     text-enlaces     text-center       max-h-full overflow-hidden place-self-right w-3/4">
         V Feria de Empleo 2022
     </h1>
