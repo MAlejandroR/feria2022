@@ -21908,7 +21908,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "flex flex-row w-screen justify-between items-center h-full items-center bg-gradient-to-r from-fondo-l via-fondo-via to-fondo-r max-h-max"
+  "class": "flex flex-row w-screen justify-between items-center h-full items-center bg-gradient-to-r from-fondo-l via-fondo-via to-fondo-r max-h-max overflow-hidden"
 };
 var _hoisted_2 = {
   "class": "groupButtonFamily"
@@ -22112,7 +22112,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       title: "Enlace a la ponencia",
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([empresa.estado_ponencia, "rounded bg-gray-200 max-w-full flex flex-row justify-between items-center m-3 text-blue-700 font-mono w-40v"])
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Para ponencias on line, se marca "), empresa.estado_ponencia === 'transmitiendo' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("button", _hoisted_8, " On line ")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                <button class=\"animate-ping inline-block"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                 py-4 px-8 bg-blue-500 text-blue-100 w-1/6 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                 rounded-lg\" v-if=\"empresa.estado_ponencia==='finalizada'\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                    On line"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                </button>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ... "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-      src: '/storage/logos/' + empresa.logo,
+      src: 'storage/logos/' + empresa.logo,
       alt: "logo",
       "class": "p-2 mr-15 w-10v max-h-20"
     }, null, 8
@@ -23014,13 +23014,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _ciclos_familias_vue_vue_type_template_id_79cf5bcc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ciclos-familias.vue?vue&type=template&id=79cf5bcc */ "./resources/js/components/crud/ciclos-familias.vue?vue&type=template&id=79cf5bcc");
 /* harmony import */ var _ciclos_familias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ciclos-familias.vue?vue&type=script&lang=js */ "./resources/js/components/crud/ciclos-familias.vue?vue&type=script&lang=js");
-/* harmony import */ var _home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_ciclos_familias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ciclos_familias_vue_vue_type_template_id_79cf5bcc__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/crud/ciclos-familias.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_ciclos_familias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ciclos_familias_vue_vue_type_template_id_79cf5bcc__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/crud/ciclos-familias.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -23042,13 +23042,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _feria_main_vue_vue_type_template_id_04a2c534__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./feria-main.vue?vue&type=template&id=04a2c534 */ "./resources/js/components/feria-main.vue?vue&type=template&id=04a2c534");
 /* harmony import */ var _feria_main_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./feria-main.vue?vue&type=script&lang=js */ "./resources/js/components/feria-main.vue?vue&type=script&lang=js");
-/* harmony import */ var _home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_feria_main_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_feria_main_vue_vue_type_template_id_04a2c534__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/feria-main.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_feria_main_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_feria_main_vue_vue_type_template_id_04a2c534__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/feria-main.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -23070,13 +23070,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _listado_ponencias_vue_vue_type_template_id_96b537ba__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./listado-ponencias.vue?vue&type=template&id=96b537ba */ "./resources/js/components/ponencias-main/listado-ponencias.vue?vue&type=template&id=96b537ba");
 /* harmony import */ var _listado_ponencias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./listado-ponencias.vue?vue&type=script&lang=js */ "./resources/js/components/ponencias-main/listado-ponencias.vue?vue&type=script&lang=js");
-/* harmony import */ var _home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_listado_ponencias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_listado_ponencias_vue_vue_type_template_id_96b537ba__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/ponencias-main/listado-ponencias.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_listado_ponencias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_listado_ponencias_vue_vue_type_template_id_96b537ba__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/ponencias-main/listado-ponencias.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -23099,7 +23099,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modal_empresa_vue_vue_type_template_id_71c4c6ee_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modal_empresa.vue?vue&type=template&id=71c4c6ee&scoped=true */ "./resources/js/components/ponencias-main/modal_empresa.vue?vue&type=template&id=71c4c6ee&scoped=true");
 /* harmony import */ var _modal_empresa_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modal_empresa.vue?vue&type=script&lang=js */ "./resources/js/components/ponencias-main/modal_empresa.vue?vue&type=script&lang=js");
 /* harmony import */ var _modal_empresa_vue_vue_type_style_index_0_id_71c4c6ee_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modal_empresa.vue?vue&type=style&index=0&id=71c4c6ee&scoped=true&lang=css */ "./resources/js/components/ponencias-main/modal_empresa.vue?vue&type=style&index=0&id=71c4c6ee&scoped=true&lang=css");
-/* harmony import */ var _home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -23107,7 +23107,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,_home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_modal_empresa_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_modal_empresa_vue_vue_type_template_id_71c4c6ee_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-71c4c6ee"],['__file',"resources/js/components/ponencias-main/modal_empresa.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_modal_empresa_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_modal_empresa_vue_vue_type_template_id_71c4c6ee_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-71c4c6ee"],['__file',"resources/js/components/ponencias-main/modal_empresa.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -23129,13 +23129,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _ponencias_vue_vue_type_template_id_b30d5b3c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ponencias.vue?vue&type=template&id=b30d5b3c */ "./resources/js/components/ponencias-main/ponencias.vue?vue&type=template&id=b30d5b3c");
 /* harmony import */ var _ponencias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ponencias.vue?vue&type=script&lang=js */ "./resources/js/components/ponencias-main/ponencias.vue?vue&type=script&lang=js");
-/* harmony import */ var _home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_ponencias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ponencias_vue_vue_type_template_id_b30d5b3c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/ponencias-main/ponencias.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_ponencias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ponencias_vue_vue_type_template_id_b30d5b3c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/ponencias-main/ponencias.vue"]])
 /* hot reload */
 if (false) {}
 

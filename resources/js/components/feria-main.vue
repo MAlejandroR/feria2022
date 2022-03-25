@@ -3,7 +3,7 @@
 
 <template>
     <div class="flex flex-row  w-screen justify-between items-center h-full items-center
-    bg-gradient-to-r from-fondo-l via-fondo-via to-fondo-r max-h-max">
+    bg-gradient-to-r from-fondo-l via-fondo-via to-fondo-r max-h-max overflow-hidden">
 
       <!--Botones familias profesionales izquierda-->
         <div class="groupButtonFamily">

@@ -3,7 +3,7 @@
 @import 'tailwindcss/utilities';
 
 .container-ppal {
-    @apply flex flex-col flex-1 justify-between h-screen mx-5 ;
+    @apply flex flex-col flex-1 justify-between h-screen mx-5 overflow-hidden ;
 }
 
 .panel_empresa {
@@ -61,7 +61,8 @@
     @apply w-full
 }
 .imgFamily{
-    @apply max-w-full object-scale-down  w-44 h-44
+    @apply max-w-full
+    /*@apply max-w-full object-scale-down  w-44 h-44*/
 }
 
 /* Que ocupe 1/4 del ancho de la parte main para mostrar los botones de izd o decha*/
@@ -99,7 +100,8 @@
 /*    transition duration-500 bg-blue-600 bg-red-600 transform -translate-y-1 scale-110;*/
 /*}*/
 .active {
-    @apply visible  transform    skew-y-12 scale-150 animate-pulse;
+    @apply visible  transform    skew-y-12 scale-150  animate-pulse;
+    /*@apply visible  transform    skew-y-12 scale-150 animate-pulse;*/
 }
 
 /*active:bg-gray-900*/

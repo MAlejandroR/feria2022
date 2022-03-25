@@ -31,7 +31,7 @@
                     <!--                </button>-->
                     <!-- ... -->
 
-                    <img :src="'/storage/logos/'+empresa.logo" alt="logo" class="p-2 mr-15 w-10v max-h-20">
+                    <img :src="'storage/logos/'+empresa.logo" alt="logo" class="p-2 mr-15 w-10v max-h-20">
                     <!--                <div class="flex flex-col justify-around text-blue-700 font-mono">-->
 
                     <div class="mx-5"> {{ empresa.empresa }}</div>
