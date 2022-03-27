@@ -10,17 +10,18 @@
     <link rel="icon" href="{{ URL::asset('images/favicon.ico') }}" type="image/x-icon"/>
 </head>
 
-<body class="container-ppal" id="app">
+<body class="container-ppal" >
+<div id="app">
 
 <x-layout.header/>
 
 @yield("contenido")
 <!--Pie en lugar de componente, inserto el html -->
 <x-layout.footer/>
-@yield("script")
+{{-- @yield("script")--}}
 
 <script src="{{asset('js/app.js')}}"></script>
-
+</div>
 
 </body>
 </html>

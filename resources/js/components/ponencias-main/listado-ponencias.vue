@@ -1,7 +1,9 @@
 <template>
 
 <div class="w:1/2">
-        <div class="text-center font-mono justify-center items-center  text-xl text-white bg-enlaces  h-10v">
+        <div class="text-center font-mono
+         justify-center items-center  text-xl text-white
+          bg-enlaces  h-10v">
             LISTADO DE PONENCIAS
             <div class="flex flex-row justify-around items-center">
                 <div class="font-mono text-monospace text-white
@@ -31,7 +33,8 @@
                     <!--                </button>-->
                     <!-- ... -->
 
-                    <img :src="'storage/logos/'+empresa.logo" alt="logo" class="p-2 mr-15 w-10v max-h-20">
+                    <img :src="'storage/logos/'+empresa.logo" alt="logo"
+                         class="p-2 mr-15 w-10v max-h-20">
                     <!--                <div class="flex flex-col justify-around text-blue-700 font-mono">-->
 
                     <div class="mx-5"> {{ empresa.empresa }}</div>

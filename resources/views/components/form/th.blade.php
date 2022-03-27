@@ -1,5 +1,5 @@
 <th scope="col" class="py-3 text-left
- text-xL
+ text-xl
  font-medium
   text-green-800 uppercase tracking-wider">
     {{$slot}}

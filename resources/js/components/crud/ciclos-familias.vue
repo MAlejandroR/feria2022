@@ -1,10 +1,7 @@
 <template>
-  <h1>Hola </h1>
-
   <div class="flex flex-col justify-center border-purple-900  w-full p-6
                     border-pink-700 rounded-3xl">
     <label class="border border-pink-900 rounded-2xl p-4 text-xl" for="familia">Familias profesionales
-
       <!-- A ver qué veo -{{ciclos}}- -->
       <div v-for="ciclo in familia" class=" flex flex-row text-1xl mt-10 pl-10">
         <input type="checkbox" id="familia" v-model="ciclos_selected" name="familia[]" :value="ciclo.familia"
@@ -20,7 +17,6 @@
     <span v-html="listado_ciclos"></span>
   </div>
 </template>
-
 <script>
 import axios from 'axios';
 

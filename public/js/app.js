@@ -21398,6 +21398,66 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/empresas/listado-empresas.vue?vue&type=script&lang=js":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/empresas/listado-empresas.vue?vue&type=script&lang=js ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: "listado-empresas",
+  props: ['empresas'],
+  data: function data() {
+    return {
+      logo: "",
+      listado_empresas: JSON.parse(this.empresas),
+      listado_ordenado: [],
+      url: "storage/logos"
+    };
+  },
+  created: function created() {
+    console.log("entrando en  mounted");
+    console.log("valor de empresas" + this.empresas);
+    console.log("listado inicial" + this.listado_empresas_inicial);
+    console.log("saliendo de mounted");
+  },
+  methods: {
+    ordena_nombre: function ordena_nombre() {
+      this.listado_ordenado = this.listado_empresas.sort(function (a, b) {
+        return a.empresa > b.empresa ? 1 : a.empresa < b.empresa ? -1 : 0;
+      });
+    },
+    ordena_ponente: function ordena_ponente() {
+      this.listado_ordenado = this.listado_empresas.sort(function (a, b) {
+        return a.ponente > b.ponenete ? 1 : a.ponente < b.ponente ? -1 : 0;
+      });
+    },
+    borrar_empresa: function borrar_empresa(id) {
+      var listado;
+      axios__WEBPACK_IMPORTED_MODULE_0___default()["delete"]("empresas/" + id).then(function (result) {
+        listado = result.data;
+      });
+      this.listado_ordenado = JSON.parse(listado);
+    },
+    editar_empresa: function editar_empresa(id) {
+      var base_url = window.location.href;
+      var caracter = base_url.charAt(base_url.length - 1);
+      if (caracter == '?') base_url = base_url.substr(0, base_url.length - 1);
+      window.location.href = base_url + "/" + id + "/edit";
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/feria-main.vue?vue&type=script&lang=js":
 /*!****************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/feria-main.vue?vue&type=script&lang=js ***!
@@ -21836,33 +21896,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, "Hola ", -1
-/* HOISTED */
-);
-
-var _hoisted_2 = {
+var _hoisted_1 = {
   "class": "flex flex-col justify-center border-purple-900 w-full p-6 border-pink-700 rounded-3xl"
 };
-var _hoisted_3 = {
+var _hoisted_2 = {
   "class": "border border-pink-900 rounded-2xl p-4 text-xl",
   "for": "familia"
 };
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Familias profesionales ");
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Familias profesionales ");
 
-var _hoisted_5 = {
+var _hoisted_4 = {
   "class": "flex flex-row text-1xl mt-10 pl-10"
 };
-var _hoisted_6 = ["value"];
-var _hoisted_7 = {
+var _hoisted_5 = ["value"];
+var _hoisted_6 = {
   id: "ciclo",
   "class": "border border-pink-900 rounded-2xl"
 };
-var _hoisted_8 = ["innerHTML"];
+var _hoisted_7 = ["innerHTML"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" A ver qué veo -{{ciclos}}- "), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.familia, function (ciclo) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" A ver qué veo -{{ciclos}}- "), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.familia, function (ciclo) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
       type: "checkbox",
       id: "familia",
       "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
@@ -21876,18 +21931,161 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       })
     }, null, 42
     /* CLASS, PROPS, HYDRATE_EVENTS */
-    , _hoisted_6), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelCheckbox, _ctx.ciclos_selected]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                       color={{$index}}>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+    , _hoisted_5), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelCheckbox, _ctx.ciclos_selected]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                       color={{$index}}>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([ciclo.estilo_color, "ml-3"])
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(ciclo.familia), 3
     /* TEXT, CLASS */
     )]);
   }), 256
   /* UNKEYED_FRAGMENT */
-  ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("    <label class=\"p-4 text-xl\" for=\"familia\">Ciclo/s a los que va dirigido </label>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("    <label class=\"p-4 text-xl\" for=\"familia\">Ciclo/s a los que va dirigido </label>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     innerHTML: _ctx.listado_ciclos
   }, null, 8
   /* PROPS */
-  , _hoisted_8)])], 64
+  , _hoisted_7)])], 64
+  /* STABLE_FRAGMENT */
+  );
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/empresas/listado-empresas.vue?vue&type=template&id=79c27f5a":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/empresas/listado-empresas.vue?vue&type=template&id=79c27f5a ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "overflow-auto h-65v"
+};
+var _hoisted_2 = {
+  "class": "divide-y divide-gray-200 table-fixed divide-y divide-gray-800 border border-indigo-600 m-8"
+};
+var _hoisted_3 = {
+  "class": "bg-gray-50"
+};
+
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
+  scope: "col",
+  "class": "py-3 text-left text-xl font-medium text-green-800 uppercase tracking-wider w-1/5"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", null, "Logo")], -1
+/* HOISTED */
+);
+
+var _hoisted_5 = {
+  scope: "col",
+  "class": "py-3 text-left text-xl font-medium text-green-800 uppercase tracking-wider"
+};
+var _hoisted_6 = {
+  scope: "col",
+  "class": "py-3 text-left text-xl font-medium text-green-800 uppercase tracking-wider"
+};
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
+  scope: "col",
+  "class": "py-3 text-left text-xl font-medium text-green-800 uppercase tracking-wider"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", null, "Editar")], -1
+/* HOISTED */
+);
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
+  scope: "col",
+  "class": "py-3 text-left text-xl font-medium text-green-800 uppercase tracking-wider"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", null, "Eliminar")], -1
+/* HOISTED */
+);
+
+var _hoisted_9 = {
+  "class": "bg-white divide-y divide-gray-200"
+};
+var _hoisted_10 = {
+  "class": "px-6 py-4 whitespace-nowrap"
+};
+var _hoisted_11 = ["src"];
+var _hoisted_12 = {
+  "class": "px-6 py-4 whitespace-nowrap"
+};
+var _hoisted_13 = {
+  "class": "px-6 py-4 w-1/6 whitespace-nowrap"
+};
+var _hoisted_14 = {
+  "class": "text-right text-sm font-medium"
+};
+var _hoisted_15 = ["onClick"];
+
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  "class": "w-12 h-8",
+  src: "images/icon/editar.png"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_17 = [_hoisted_16];
+var _hoisted_18 = {
+  "class": "text-right text-sm font-medium"
+};
+var _hoisted_19 = ["onClick"];
+
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  "class": "w-12 h-8",
+  src: "images/icon/borrar.png"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_21 = [_hoisted_20];
+
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("hr", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("hr", null, null, -1
+/* HOISTED */
+);
+
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("table", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[0] || (_cache[0] = function () {
+      return $options.ordena_nombre && $options.ordena_nombre.apply($options, arguments);
+    })
+  }, "Empresa")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[1] || (_cache[1] = function () {
+      return $options.ordena_ponente && $options.ordena_ponente.apply($options, arguments);
+    })
+  }, "Ponente")]), _hoisted_7, _hoisted_8])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tbody", _hoisted_9, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.listado_empresas, function (empresa) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("tr", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+      src: 'storage/logos/' + empresa.logo,
+      alt: "logo",
+      "class": "p-2 mr-15 w-10v max-h-20"
+    }, null, 8
+    /* PROPS */
+    , _hoisted_11)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(empresa.empresa), 1
+    /* TEXT */
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(empresa.ponente), 1
+    /* TEXT */
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $options.editar_empresa(empresa.id);
+      }
+    }, _hoisted_17, 8
+    /* PROPS */
+    , _hoisted_15)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $options.borrar_empresa(empresa.id);
+      }
+    }, _hoisted_21, 8
+    /* PROPS */
+    , _hoisted_19)])]);
+  }), 256
+  /* UNKEYED_FRAGMENT */
+  ))])])]), _hoisted_22, _hoisted_23], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -22346,7 +22544,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_ponencias_main_ponencias_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/ponencias-main/ponencias.vue */ "./resources/js/components/ponencias-main/ponencias.vue");
 /* harmony import */ var _components_feria_main_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/feria-main.vue */ "./resources/js/components/feria-main.vue");
 /* harmony import */ var _components_ponencias_main_listado_ponencias_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/ponencias-main/listado-ponencias.vue */ "./resources/js/components/ponencias-main/listado-ponencias.vue");
-/* harmony import */ var _components_crud_ciclos_familias_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/crud/ciclos-familias.vue */ "./resources/js/components/crud/ciclos-familias.vue");
+/* harmony import */ var _components_empresas_listado_empresas__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/empresas/listado-empresas */ "./resources/js/components/empresas/listado-empresas.vue");
+/* harmony import */ var _components_crud_ciclos_familias_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/crud/ciclos-familias.vue */ "./resources/js/components/crud/ciclos-familias.vue");
+
 
 
 
@@ -22357,7 +22557,8 @@ __webpack_require__.r(__webpack_exports__);
     ponencias: _components_ponencias_main_ponencias_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
     listadoPonencias: _components_ponencias_main_listado_ponencias_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
     FeriaMain: _components_feria_main_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
-    ciclosFamilias: _components_crud_ciclos_familias_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
+    ciclosFamilias: _components_crud_ciclos_familias_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
+    listadoEmpresas: _components_empresas_listado_empresas__WEBPACK_IMPORTED_MODULE_4__["default"]
   }
 }).mount('#app');
 
@@ -23014,13 +23215,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _ciclos_familias_vue_vue_type_template_id_79cf5bcc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ciclos-familias.vue?vue&type=template&id=79cf5bcc */ "./resources/js/components/crud/ciclos-familias.vue?vue&type=template&id=79cf5bcc");
 /* harmony import */ var _ciclos_familias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ciclos-familias.vue?vue&type=script&lang=js */ "./resources/js/components/crud/ciclos-familias.vue?vue&type=script&lang=js");
-/* harmony import */ var _home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_ciclos_familias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ciclos_familias_vue_vue_type_template_id_79cf5bcc__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/crud/ciclos-familias.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_ciclos_familias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ciclos_familias_vue_vue_type_template_id_79cf5bcc__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/crud/ciclos-familias.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
+/***/ "./resources/js/components/empresas/listado-empresas.vue":
+/*!***************************************************************!*\
+  !*** ./resources/js/components/empresas/listado-empresas.vue ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _listado_empresas_vue_vue_type_template_id_79c27f5a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./listado-empresas.vue?vue&type=template&id=79c27f5a */ "./resources/js/components/empresas/listado-empresas.vue?vue&type=template&id=79c27f5a");
+/* harmony import */ var _listado_empresas_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./listado-empresas.vue?vue&type=script&lang=js */ "./resources/js/components/empresas/listado-empresas.vue?vue&type=script&lang=js");
+/* harmony import */ var _home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,_home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_listado_empresas_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_listado_empresas_vue_vue_type_template_id_79c27f5a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/empresas/listado-empresas.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -23042,13 +23271,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _feria_main_vue_vue_type_template_id_04a2c534__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./feria-main.vue?vue&type=template&id=04a2c534 */ "./resources/js/components/feria-main.vue?vue&type=template&id=04a2c534");
 /* harmony import */ var _feria_main_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./feria-main.vue?vue&type=script&lang=js */ "./resources/js/components/feria-main.vue?vue&type=script&lang=js");
-/* harmony import */ var _home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_feria_main_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_feria_main_vue_vue_type_template_id_04a2c534__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/feria-main.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_feria_main_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_feria_main_vue_vue_type_template_id_04a2c534__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/feria-main.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -23070,13 +23299,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _listado_ponencias_vue_vue_type_template_id_96b537ba__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./listado-ponencias.vue?vue&type=template&id=96b537ba */ "./resources/js/components/ponencias-main/listado-ponencias.vue?vue&type=template&id=96b537ba");
 /* harmony import */ var _listado_ponencias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./listado-ponencias.vue?vue&type=script&lang=js */ "./resources/js/components/ponencias-main/listado-ponencias.vue?vue&type=script&lang=js");
-/* harmony import */ var _home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_listado_ponencias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_listado_ponencias_vue_vue_type_template_id_96b537ba__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/ponencias-main/listado-ponencias.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_listado_ponencias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_listado_ponencias_vue_vue_type_template_id_96b537ba__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/ponencias-main/listado-ponencias.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -23099,7 +23328,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modal_empresa_vue_vue_type_template_id_71c4c6ee_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modal_empresa.vue?vue&type=template&id=71c4c6ee&scoped=true */ "./resources/js/components/ponencias-main/modal_empresa.vue?vue&type=template&id=71c4c6ee&scoped=true");
 /* harmony import */ var _modal_empresa_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modal_empresa.vue?vue&type=script&lang=js */ "./resources/js/components/ponencias-main/modal_empresa.vue?vue&type=script&lang=js");
 /* harmony import */ var _modal_empresa_vue_vue_type_style_index_0_id_71c4c6ee_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modal_empresa.vue?vue&type=style&index=0&id=71c4c6ee&scoped=true&lang=css */ "./resources/js/components/ponencias-main/modal_empresa.vue?vue&type=style&index=0&id=71c4c6ee&scoped=true&lang=css");
-/* harmony import */ var _home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -23107,7 +23336,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,_home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_modal_empresa_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_modal_empresa_vue_vue_type_template_id_71c4c6ee_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-71c4c6ee"],['__file',"resources/js/components/ponencias-main/modal_empresa.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_modal_empresa_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_modal_empresa_vue_vue_type_template_id_71c4c6ee_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-71c4c6ee"],['__file',"resources/js/components/ponencias-main/modal_empresa.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -23129,13 +23358,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _ponencias_vue_vue_type_template_id_b30d5b3c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ponencias.vue?vue&type=template&id=b30d5b3c */ "./resources/js/components/ponencias-main/ponencias.vue?vue&type=template&id=b30d5b3c");
 /* harmony import */ var _ponencias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ponencias.vue?vue&type=script&lang=js */ "./resources/js/components/ponencias-main/ponencias.vue?vue&type=script&lang=js");
-/* harmony import */ var _home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_manuel_web_manuel_infenlaces_com_public_html_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_ponencias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ponencias_vue_vue_type_template_id_b30d5b3c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/ponencias-main/ponencias.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_manuel_laravel_feria2022_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_ponencias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ponencias_vue_vue_type_template_id_b30d5b3c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/ponencias-main/ponencias.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -23156,6 +23385,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ciclos_familias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ciclos_familias_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ciclos-familias.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/crud/ciclos-familias.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/components/empresas/listado-empresas.vue?vue&type=script&lang=js":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/empresas/listado-empresas.vue?vue&type=script&lang=js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_listado_empresas_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_listado_empresas_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./listado-empresas.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/empresas/listado-empresas.vue?vue&type=script&lang=js");
  
 
 /***/ }),
@@ -23236,6 +23481,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ciclos_familias_vue_vue_type_template_id_79cf5bcc__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ciclos_familias_vue_vue_type_template_id_79cf5bcc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ciclos-familias.vue?vue&type=template&id=79cf5bcc */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/crud/ciclos-familias.vue?vue&type=template&id=79cf5bcc");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/empresas/listado-empresas.vue?vue&type=template&id=79c27f5a":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/components/empresas/listado-empresas.vue?vue&type=template&id=79c27f5a ***!
+  \*********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_listado_empresas_vue_vue_type_template_id_79c27f5a__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_listado_empresas_vue_vue_type_template_id_79c27f5a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./listado-empresas.vue?vue&type=template&id=79c27f5a */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/empresas/listado-empresas.vue?vue&type=template&id=79c27f5a");
 
 
 /***/ }),

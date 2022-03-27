@@ -3,7 +3,8 @@
 @import 'tailwindcss/utilities';
 
 .container-ppal {
-    @apply flex flex-col flex-1 justify-between h-screen mx-5 overflow-hidden ;
+    @apply flex flex-col flex-1
+    justify-between h-screen mx-5 ;
 }
 
 .panel_empresa {

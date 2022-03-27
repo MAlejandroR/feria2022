@@ -11,9 +11,10 @@
 
 
 @section("contenido")
+<div class="overflow-auto">
     {{--    {{route('empresas.update',[$empresa])}}--}}
-    <form action="{{route('empresas.update',[$empresa])}}" enctype="multipart/form-data" method='POST' id="form"
-          class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <form action="{{route('empresas.update',[$empresa])}}" enctype="multipart/form-data" method='POST'
+          id="form" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 overflow-auto">
         @method("PUT")
 
         <div class="bg-yellow-600 flex flex-row">
@@ -72,7 +73,8 @@
                 value="micorreo@gmail.com"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 name="email" id="email" type="email" placeholder="Email">
-        </div><div class="mb-4">
+        </div>
+        <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="persona_contacto">
                 Persona de Contacto
             </label>
@@ -189,17 +191,19 @@
                 Logo:
                 <div class="flex-shrink-0 h-10 w-10">
                     <img class="h-10 w-10 rounded-full"
-                         src="{{asset("storage/logos/{$empresa->logo}")}}">
+                         src="{{asset("storage/logos/{$empresa->logo}")}}" alt="Logo empresa">
                 </div>
             </label>
-            <input value="{{$empresa->logo}}"
-
+            <!-- Aquí un problema .... Not working....-->
+            <label for="">Selecciona un logo nuevo, el actual <strong>{{$empresa->logo}}</strong></label>
+            <input
                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                    name="logo" id="date" type="file" placeholder="Logo">
         </div>
 
         <x-form.button> Guardar datos</x-form.button>
     </form>
+</div>
 @endsection
 
 

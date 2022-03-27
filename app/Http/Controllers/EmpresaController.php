@@ -86,9 +86,10 @@ class EmpresaController extends Controller
         $name = $request->file('logo')->getClientOriginalName();;
 
         $a = $request->file('logo')->storeAs('logos', $name);
+        info("Intentando guardar ",[$name]);
 
         $empresa->logo = $name;
-        info("he guardado en estorage ", [$a]);
+        info("he guardado en storage ", [$a]);
 
         $empresa->saveOrFail();
         $msj = "La empresa $empresa->empresa se ha guardado en la base de datos";
@@ -211,7 +212,8 @@ class EmpresaController extends Controller
     public function destroy(Empresa $empresa)
     {
         $empresa->delete();
-        return redirect()->route('empresas.index');
+        $empresas = Empresa::all();
+        return response()->json(['empresas'=>$empresas]);
         //
     }
 

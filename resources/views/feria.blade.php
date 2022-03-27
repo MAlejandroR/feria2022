@@ -1,6 +1,6 @@
 @extends('layout')
 @section('contenido')
-    <div id="app">
+    <div id="app" class="overflow-hidden">
         @auth <!--Si estoy atenticado pongo opciones de administración-->
         <x-layout.nav class="bg-fondo1"><!--h-5v-->
             @isset($msj)
