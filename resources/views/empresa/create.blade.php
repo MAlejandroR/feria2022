@@ -43,7 +43,6 @@ El Centro Público Integrado de Formación Profesional Los Enlaces comenzó a fu
                     Email
                 </label>
                 <input
-                        value="micorreo@gmail.com"
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         name="email" id="email" type="email" placeholder="Email">
             </div>
@@ -52,7 +51,7 @@ El Centro Público Integrado de Formación Profesional Los Enlaces comenzó a fu
                     Persona de Contacto
                 </label>
                 <input
-                        value="Alumudena Hidalgo"
+
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         name="persona_contacto" id="persona_contacto" type="text" placeholder="Peronsa de contacto">
             </div>

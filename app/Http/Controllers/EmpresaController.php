@@ -190,7 +190,6 @@ class EmpresaController extends Controller
     {
 
 //Miramos a ver si hay  nuevo logo
-
         if ($request->file('logo') != null) {
             $name = $request->file('logo')->getClientOriginalName();;
             $directorioDeLogos = asset("storage/logos");

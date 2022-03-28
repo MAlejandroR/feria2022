@@ -70,7 +70,7 @@
                 Email
             </label>
             <input
-                value="micorreo@gmail.com"
+                value="{{$empresa->email}}"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 name="email" id="email" type="email" placeholder="Email">
         </div>
@@ -79,7 +79,7 @@
                 Persona de Contacto
             </label>
             <input
-                value="Alumudena Hidalgo"
+                value="{{$empresa->persona_contacto}}"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 name="persona_contacto" id="persona_contacto" type="text" placeholder="Peronsa de contacto" >
         </div>
