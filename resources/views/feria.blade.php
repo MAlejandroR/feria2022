@@ -9,7 +9,7 @@
         </x-layout.nav>
         <div class="h-70v overflow-y-auto flex flex-row ">
             <feria-main route_form="{{route('empresas.ponencias')}}"/>
-            </feria-main>
+
         </div>
         @endauth
         @guest

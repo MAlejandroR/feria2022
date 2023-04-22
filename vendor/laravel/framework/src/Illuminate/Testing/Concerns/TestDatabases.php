@@ -42,6 +42,7 @@ trait TestDatabases
             $databaseTraits = [
                 Testing\DatabaseMigrations::class,
                 Testing\DatabaseTransactions::class,
+                Testing\DatabaseTruncation::class,
                 Testing\RefreshDatabase::class,
             ];
 
@@ -61,6 +62,16 @@ trait TestDatabases
                 });
             }
         });
+
+        ParallelTesting::tearDownProcess(function () {
+            $this->whenNotUsingInMemoryDatabase(function ($database) {
+                if (ParallelTesting::option('drop_databases')) {
+                    Schema::dropDatabaseIfExists(
+                        $this->testDatabase($database)
+                    );
+                }
+            });
+        });
     }
 
     /**
@@ -77,7 +88,7 @@ trait TestDatabases
             $this->usingDatabase($testDatabase, function () {
                 Schema::hasTable('dummy');
             });
-        } catch (QueryException $e) {
+        } catch (QueryException) {
             $this->usingDatabase($database, function () use ($testDatabase) {
                 Schema::dropDatabaseIfExists($testDatabase);
                 Schema::createDatabase($testDatabase);

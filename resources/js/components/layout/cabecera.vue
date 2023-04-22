@@ -10,6 +10,7 @@ border border-red-400 rounded  justify-content-around items-center '>
     <h1 class="hidden md:block text-7xl font-mono text-enlaces text-center
       max-h-full overflow-hidden place-self-right w-3/4">
       III Feria de Empleo 2021
+        {{titulo}}
     </h1>
 
     <slot></slot><!-- Para poder añadir un botón de volver-->
@@ -18,7 +19,11 @@ border border-red-400 rounded  justify-content-around items-center '>
 
 <script>
 
-export default {}
+export default {
+    name:"cabecera",
+    props:['titulo']
+
+}
 
 </script>
 <style>

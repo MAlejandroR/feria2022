@@ -1,8 +1,8 @@
-import {createApp} from 'vue';
-import ponencias from './components/ponencias-main/ponencias.vue'
+import {createApp}   from "vue/dist/vue.esm-bundler.js";
+import ponencias from './components/ponencias-main/ponencias.vue';
 import FeriaMain from './components/feria-main.vue';
 import listadoPonencias from './components/ponencias-main/listado-ponencias.vue';
-import listadoEmpresas from './components/empresas/listado-empresas';
+import listadoEmpresas from './components/empresas/listado-empresas.vue';
 import ciclosFamilias from './components/crud/ciclos-familias.vue';
 
 

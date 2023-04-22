@@ -2,15 +2,17 @@
 
 namespace Illuminate\Database\Query\Grammars;
 
+use Illuminate\Database\Concerns\CompilesJsonPaths;
 use Illuminate\Database\Grammar as BaseGrammar;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Query\JoinClause;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Str;
 use RuntimeException;
 
 class Grammar extends BaseGrammar
 {
+    use CompilesJsonPaths;
+
     /**
      * The grammar specific operators.
      *
@@ -34,6 +36,7 @@ class Grammar extends BaseGrammar
         'aggregate',
         'columns',
         'from',
+        'indexHint',
         'joins',
         'wheres',
         'groups',
@@ -501,7 +504,7 @@ class Grammar extends BaseGrammar
         // Here we will calculate what portion of the string we need to remove. If this
         // is a join clause query, we need to remove the "on" portion of the SQL and
         // if it is a normal query we need to take the leading "where" of queries.
-        $offset = $query instanceof JoinClause ? 3 : 6;
+        $offset = $where['query'] instanceof JoinClause ? 3 : 6;
 
         return '('.substr($this->compileWheres($where['query']), $offset).')';
     }
@@ -621,6 +624,35 @@ class Grammar extends BaseGrammar
     }
 
     /**
+     * Compile a "where JSON contains key" clause.
+     *
+     * @param  \Illuminate\Database\Query\Builder  $query
+     * @param  array  $where
+     * @return string
+     */
+    protected function whereJsonContainsKey(Builder $query, $where)
+    {
+        $not = $where['not'] ? 'not ' : '';
+
+        return $not.$this->compileJsonContainsKey(
+            $where['column']
+        );
+    }
+
+    /**
+     * Compile a "JSON contains key" statement into SQL.
+     *
+     * @param  string  $column
+     * @return string
+     *
+     * @throws \RuntimeException
+     */
+    protected function compileJsonContainsKey($column)
+    {
+        throw new RuntimeException('This database engine does not support JSON contains key operations.');
+    }
+
+    /**
      * Compile a "where JSON length" clause.
      *
      * @param  \Illuminate\Database\Query\Builder  $query
@@ -649,6 +681,17 @@ class Grammar extends BaseGrammar
     protected function compileJsonLength($column, $operator, $value)
     {
         throw new RuntimeException('This database engine does not support JSON length operations.');
+    }
+
+    /**
+     * Compile a "JSON value cast" statement into SQL.
+     *
+     * @param  string  $value
+     * @return string
+     */
+    public function compileJsonValueCast($value)
+    {
+        return $value;
     }
 
     /**
@@ -835,7 +878,7 @@ class Grammar extends BaseGrammar
     /**
      * Compile the random statement into SQL.
      *
-     * @param  string  $seed
+     * @param  string|int  $seed
      * @return string
      */
     public function compileRandom($seed)
@@ -1019,7 +1062,13 @@ class Grammar extends BaseGrammar
      */
     public function compileInsertUsing(Builder $query, array $columns, string $sql)
     {
-        return "insert into {$this->wrapTable($query->from)} ({$this->columnize($columns)}) $sql";
+        $table = $this->wrapTable($query->from);
+
+        if (empty($columns) || $columns === ['*']) {
+            return "insert into {$table} $sql";
+        }
+
+        return "insert into {$table} ({$this->columnize($columns)}) $sql";
     }
 
     /**
@@ -1257,64 +1306,6 @@ class Grammar extends BaseGrammar
     protected function wrapJsonBooleanValue($value)
     {
         return $value;
-    }
-
-    /**
-     * Split the given JSON selector into the field and the optional path and wrap them separately.
-     *
-     * @param  string  $column
-     * @return array
-     */
-    protected function wrapJsonFieldAndPath($column)
-    {
-        $parts = explode('->', $column, 2);
-
-        $field = $this->wrap($parts[0]);
-
-        $path = count($parts) > 1 ? ', '.$this->wrapJsonPath($parts[1], '->') : '';
-
-        return [$field, $path];
-    }
-
-    /**
-     * Wrap the given JSON path.
-     *
-     * @param  string  $value
-     * @param  string  $delimiter
-     * @return string
-     */
-    protected function wrapJsonPath($value, $delimiter = '->')
-    {
-        $value = preg_replace("/([\\\\]+)?\\'/", "''", $value);
-
-        $jsonPath = collect(explode($delimiter, $value))
-            ->map(function ($segment) {
-                return $this->wrapJsonPathSegment($segment);
-            })
-            ->join('.');
-
-        return "'$".(str_starts_with($jsonPath, '[') ? '' : '.').$jsonPath."'";
-    }
-
-    /**
-     * Wrap the given JSON path segment.
-     *
-     * @param  string  $segment
-     * @return string
-     */
-    protected function wrapJsonPathSegment($segment)
-    {
-        if (preg_match('/(\[[^\]]+\])+$/', $segment, $parts)) {
-            $key = Str::beforeLast($segment, $parts[0]);
-
-            if (! empty($key)) {
-                return '"'.$key.'"'.$parts[0];
-            }
-
-            return $parts[0];
-        }
-
-        return '"'.$segment.'"';
     }
 
     /**
