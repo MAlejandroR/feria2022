@@ -26,40 +26,20 @@ module.exports = {
 }
 ,
 colors: {
+
     // para crear tonalidades semitransparentes para una ventana modal
-    'smoke-darkest'
-:
-    'rgba(0, 0, 0, 0.9)',
-        'smoke-darker'
-:
-    'rgba(0, 0, 0, 0.75)',
-        'smoke-dark'
-:
-    'rgba(0, 0, 0, 0.6)',
-        'smoke'
-:
-    'rgba(0, 0, 0, 0.5)',
-        'smoke-light'
-:
-    'rgba(0, 0, 0, 0.4)',
-        'smoke-lighter'
-:
-    'rgba(0, 0, 0, 0.25)',
-        'smoke-lightest'
-:
-    'rgba(0, 0, 0, 0.1)',
-        'enlaces'
-:
-    '#E9571E',
-        'fondo-via'
-:
-    "#C3C2C3",
-        'fondo-l'
-:
-    "#C8C9C8",
-        'fondo-r'
-:
-    "#C1C0C1",
+    'bg-semi-75':'rgba(0, 0, 0, 0.75)',
+    'smoke-darkest':'rgba(0, 0, 0, 0.9)',
+    'smoke-darker':'rgba(0, 0, 0, 0.75)',
+    'smoke-dark':'rgba(0, 0, 0, 0.6)',
+    'smoke':'rgba(0, 0, 0, 0.5)',
+    'smoke-light':'rgba(0, 0, 0, 0.4)',
+    'smoke-lighter':'rgba(0, 0, 0, 0.25)',
+    'smoke-lightest':'rgba(0, 0, 0, 0.1)',
+    'enlaces':'#E9571E',
+    'fondo-via':"#C3C2C3",
+    'fondo-l':"#C8C9C8",
+    'fondo-r':"#C1C0C1",
 
 }
 ,
@@ -163,7 +143,8 @@ height: {
         "100v"
 :
     "100vh",
-},
+}
+,
 width: {
     "10v"
 :
