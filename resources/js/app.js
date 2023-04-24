@@ -6,6 +6,8 @@ import listadoEmpresas from './components/empresas/listado-empresas.vue';
 import ciclosFamilias from './components/crud/ciclos-familias.vue';
 import CardModal from './components/CardModal.vue';
 
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
 
 createApp({
     components: {
@@ -15,6 +17,8 @@ createApp({
         ciclosFamilias,
         listadoEmpresas,
         CardModal,
+        FontAwesomeIcon
+
     },
     data(){
         return{

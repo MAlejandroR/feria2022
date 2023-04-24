@@ -1,7 +1,9 @@
 <!--<template class="bg-fondo_feria ">-->
 <template>
     <div class="flex flex-row  w-screen justify-between items-center h-full items-center
-    bg-gradient-to-r from-fondo-l via-fondo-via to-fondo-r max-h-max overflow-hidden">
+    bg-gradient-to-r from-fondo-l via-fondo-via to-fondo-r max-h-max overflow-hidden
+    z-40
+">
 
       <!--Botones familias profesionales izquierda-->
         <div class="groupButtonFamily">
@@ -72,40 +74,46 @@ export default {
             isActiveInformatica: false,
             isActiveComercio: false,
             isActiveJornadas: false,
+            activo:true,
 
         }
     },
     methods: {
         onTimeUpdate: function (event) {
-            let tiempo = video.currentTime;
 
-            if ((tiempo > 12.60) && (tiempo < 14.20)) {
-                //informática
-                this.isActiveInformatica = true;
+                let tiempo = video.currentTime;
+
+                if ((tiempo > 12.60) && (tiempo < 14.20)) {
+                    //informática
+                    this.isActiveInformatica = true;
+                }
+
+                if ((tiempo > 15) && (tiempo < 16.20)) {
+                    this.isActiveInformatica = false;
+                    this.isActiveImagen = true;
+
+                    //imagen
+
+                }
+                if ((tiempo > 16.50) && (tiempo < 17.20)) {
+                    this.isActiveImagen = false;
+                    this.isActiveComercio = true;
+
+                }
+                if ((tiempo > 18.00) && (tiempo < 20)) {
+                    //jornadas
+                    this.isActiveComercio = false;
+                    this.isActiveJornadas = true;
+                }
+                if (tiempo > 20) {
+                    this.isActiveJornadas = false;
+                }
             }
 
-            if ((tiempo > 15) && (tiempo < 16.20)) {
-                this.isActiveInformatica = false;
-                this.isActiveImagen = true;
 
-                //imagen
 
-            }
-            if ((tiempo > 16.50) && (tiempo < 17.20)) {
-                this.isActiveImagen = false;
-                this.isActiveComercio = true;
-
-            }
-            if ((tiempo > 18.00) && (tiempo < 20)) {
-                //jornadas
-                this.isActiveComercio = false;
-                this.isActiveJornadas = true;
-            }
-            if (tiempo > 20) {
-                this.isActiveJornadas = false;
-            }
-        }
     },
+
 
 
 // components: {VideoFeria, FamiliaSi, FamiliaId, FamiliaSd, FamiliaIi}

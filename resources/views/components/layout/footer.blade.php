@@ -6,7 +6,7 @@
         C/Jarque de Moncayo nº 10 - 50012 - ZARAGOZA - Tlfn: 976 300 804 - Fax: 976 314 403
     </div>
 </div>
-
+{{--
 @if (Route::has('login'))
     <div class="flex flex-row justify-around p-2 items-center text-white">
         @auth

@@ -3,7 +3,8 @@
     <Transition name="fade">
         <div
                 v-if="showing"
-                class="fixed inset-0 w-full h-screen flex items-center justify-center bg-semi-75"
+                class="fixed inset-0 w-full h-screen
+                 flex items-center justify-center bg-semi-75 z-50"
                 @click.self="close"
         >
             <div class="relative w-full max-w-2xl bg-white shadow-lg rounded-lg p-8">
@@ -13,6 +14,7 @@
                         @click.prevent="close"
                 >
                     x
+                    <i class="fa fa-window-close" aria-hidden="true"></i>
 
           </button>
                 <slot />
@@ -56,7 +58,7 @@ export default {
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-    transition: all 0.4s;
+    transition: all 1s;
 }
 .fade-enter,
 .fade-leave-to {
